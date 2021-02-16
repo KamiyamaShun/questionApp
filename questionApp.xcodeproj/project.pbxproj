@@ -13,6 +13,15 @@
 		EFC88FC725DA54DD00B45924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC88FC525DA54DD00B45924 /* Main.storyboard */; };
 		EFC88FC925DA54DF00B45924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC88FC825DA54DF00B45924 /* Assets.xcassets */; };
 		EFC88FCC25DA54DF00B45924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC88FCA25DA54DF00B45924 /* LaunchScreen.storyboard */; };
+		EFC88FD625DA560500B45924 /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EFC88FD525DA560500B45924 /* maruSound.mp3 */; };
+		EFC88FD925DA560D00B45924 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EFC88FD825DA560D00B45924 /* sound.mp3 */; };
+		EFC88FDC25DA561400B45924 /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EFC88FDB25DA561400B45924 /* batsuSound.mp3 */; };
+		EFC88FE325DA570900B45924 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC88FE225DA570900B45924 /* NextViewController.swift */; };
+		EFC88FEA25DA628800B45924 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC88FE925DA628800B45924 /* ImageModel.swift */; };
+		EFC88FED25DA636B00B45924 /* imagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC88FEC25DA636B00B45924 /* imagesList.swift */; };
+		EFC88FF025DA7D8700B45924 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC88FEF25DA7D8700B45924 /* Sound.swift */; };
+		EFC88FF325DA819300B45924 /* WithoutMp3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC88FF225DA819300B45924 /* WithoutMp3.swift */; };
+		EFC88FF625DA840500B45924 /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC88FF525DA840500B45924 /* ChangeColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		EFC88FC825DA54DF00B45924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFC88FCB25DA54DF00B45924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFC88FCD25DA54DF00B45924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC88FD525DA560500B45924 /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = maruSound.mp3; path = "../../../Downloads/Resources/iOS14画像集/QuestionApp1素材/maruSound.mp3"; sourceTree = "<group>"; };
+		EFC88FD825DA560D00B45924 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sound.mp3; path = "../../../Downloads/Resources/iOS14画像集/QuestionApp1素材/sound.mp3"; sourceTree = "<group>"; };
+		EFC88FDB25DA561400B45924 /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = batsuSound.mp3; path = "../../../Downloads/Resources/iOS14画像集/QuestionApp1素材/batsuSound.mp3"; sourceTree = "<group>"; };
+		EFC88FE225DA570900B45924 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		EFC88FE925DA628800B45924 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		EFC88FEC25DA636B00B45924 /* imagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesList.swift; sourceTree = "<group>"; };
+		EFC88FEF25DA7D8700B45924 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		EFC88FF225DA819300B45924 /* WithoutMp3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutMp3.swift; sourceTree = "<group>"; };
+		EFC88FF525DA840500B45924 /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,48 @@
 		EFC88FBE25DA54DD00B45924 /* questionApp */ = {
 			isa = PBXGroup;
 			children = (
+				EFC88FDE25DA567900B45924 /* model */,
+				EFC88FDF25DA568300B45924 /* view */,
+				EFC88FE025DA568A00B45924 /* controller */,
+				EFC88FCA25DA54DF00B45924 /* LaunchScreen.storyboard */,
+				EFC88FCD25DA54DF00B45924 /* Info.plist */,
+				EFC88FD525DA560500B45924 /* maruSound.mp3 */,
+				EFC88FD825DA560D00B45924 /* sound.mp3 */,
+				EFC88FDB25DA561400B45924 /* batsuSound.mp3 */,
+			);
+			path = questionApp;
+			sourceTree = "<group>";
+		};
+		EFC88FDE25DA567900B45924 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EFC88FE925DA628800B45924 /* ImageModel.swift */,
+				EFC88FEC25DA636B00B45924 /* imagesList.swift */,
+				EFC88FEF25DA7D8700B45924 /* Sound.swift */,
+				EFC88FF225DA819300B45924 /* WithoutMp3.swift */,
+				EFC88FF525DA840500B45924 /* ChangeColor.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EFC88FDF25DA568300B45924 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EFC88FC525DA54DD00B45924 /* Main.storyboard */,
+				EFC88FC825DA54DF00B45924 /* Assets.xcassets */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EFC88FE025DA568A00B45924 /* controller */ = {
+			isa = PBXGroup;
+			children = (
 				EFC88FBF25DA54DD00B45924 /* AppDelegate.swift */,
 				EFC88FC125DA54DD00B45924 /* SceneDelegate.swift */,
 				EFC88FC325DA54DD00B45924 /* ViewController.swift */,
-				EFC88FC525DA54DD00B45924 /* Main.storyboard */,
-				EFC88FC825DA54DF00B45924 /* Assets.xcassets */,
-				EFC88FCA25DA54DF00B45924 /* LaunchScreen.storyboard */,
-				EFC88FCD25DA54DF00B45924 /* Info.plist */,
+				EFC88FE225DA570900B45924 /* NextViewController.swift */,
 			);
-			path = questionApp;
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC88FCC25DA54DF00B45924 /* LaunchScreen.storyboard in Resources */,
+				EFC88FD625DA560500B45924 /* maruSound.mp3 in Resources */,
 				EFC88FC925DA54DF00B45924 /* Assets.xcassets in Resources */,
 				EFC88FC725DA54DD00B45924 /* Main.storyboard in Resources */,
+				EFC88FDC25DA561400B45924 /* batsuSound.mp3 in Resources */,
+				EFC88FD925DA560D00B45924 /* sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC88FF025DA7D8700B45924 /* Sound.swift in Sources */,
 				EFC88FC425DA54DD00B45924 /* ViewController.swift in Sources */,
+				EFC88FEA25DA628800B45924 /* ImageModel.swift in Sources */,
+				EFC88FE325DA570900B45924 /* NextViewController.swift in Sources */,
 				EFC88FC025DA54DD00B45924 /* AppDelegate.swift in Sources */,
 				EFC88FC225DA54DD00B45924 /* SceneDelegate.swift in Sources */,
+				EFC88FF625DA840500B45924 /* ChangeColor.swift in Sources */,
+				EFC88FED25DA636B00B45924 /* imagesList.swift in Sources */,
+				EFC88FF325DA819300B45924 /* WithoutMp3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shun.questionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shun.questionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
